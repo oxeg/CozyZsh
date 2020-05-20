@@ -1,11 +1,14 @@
 # CozyZsh
-Minimalistic and cozy zsh with some nice features
+Cozy zsh setup with minimum set of features for comfortable work.
+
+### Features
 
 1. `git` autocompletion
 1. autocompletion based on command history
 1. syntax highlight
 1. git branch info displayed in prompt
 1. `UP` and `DOWN` arrows for command hitory search
+1. [Optional] `kubectl` shortcut and autocompletion
 
 ### Installation
 
