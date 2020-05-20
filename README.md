@@ -1,7 +1,5 @@
 # CozyZsh
-CozyZsh
-
-## Features
+Minimalistic and cozy zsh with some nice features
 
 1. `git` autocompletion
 1. autocompletion based on command history
