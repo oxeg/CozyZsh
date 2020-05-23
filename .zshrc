@@ -20,6 +20,10 @@ fpath=(~/.zsh/zsh-git-completion/ $fpath)
 autoload -Uz compinit && compinit
 
 
+# case insensitive autocompletion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+
 # kubectl autocomplete
 # make sure you have kubectl installed https://kubernetes.io/docs/tasks/tools/install-kubectl/
 # source <(kubectl completion zsh)
