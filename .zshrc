@@ -41,7 +41,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # git branch info
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '[%F{red}%b%f]'
+zstyle ':vcs_info:git:*' formats '[%F{red}%b%f] '
 setopt PROMPT_SUBST
 
 
@@ -56,4 +56,4 @@ bindkey "^[[B" history-beginning-search-forward-end
 # set PROMPT
 # default PROMPT='%n@%m %1~ %#'
 # see http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
-PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{250}%1~%f%b %B${vcs_info_msg_0_}%b > '
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{250}%1~%f%b %B${vcs_info_msg_0_}%b> '
