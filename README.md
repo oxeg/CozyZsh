@@ -3,13 +3,13 @@ Cozy zsh setup with minimum set of features for comfortable work.
 
 ### Features
 
-1. `git` completion
-1. case insensitive completion
-1. completion based on command history
+1. `git` completions
+1. case insensitive completions
+1. completions based on command history
 1. syntax highlight
 1. git branch info displayed in prompt
-1. `UP` and `DOWN` arrows for command hitory search
-1. [Optional] `kubectl` shortcut and completion
+1. prompt indicates wheter previous command succeeded
+1. [Optional] `kubectl`, `k3d`, `brew` completions
 
 ### Installation
 
@@ -28,5 +28,6 @@ Don't forget to restart your terminal
 * https://github.com/zsh-users/zsh-autosuggestions
 * https://github.com/zsh-users/zsh-syntax-highlighting
 * https://stackoverflow.com/a/1128583/1553934
-* https://unix.stackexchange.com/a/97844
-* https://kubernetes.io/docs/tasks/tools/install-kubectl/#optional-kubectl-configurations
+* https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/
+* https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+* https://k3d.io/usage/commands/k3d_completion/
