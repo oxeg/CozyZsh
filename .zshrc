@@ -1,16 +1,14 @@
 # reload completions
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 
 # expand PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
-export PATH=/Users/egor/bin:$PATH
 
 
 # env variables
-export JAVA_HOME=/Users/egor/java/jdk-17.0.1.jdk/Contents/Home
+# export JAVA_HOME=
 
 
 # aliases
@@ -20,13 +18,13 @@ alias pg='ps -ax | grep'
 
 
 # kubectl completions
-source <(kubectl completion zsh)
+# source <(kubectl completion zsh)
 
 # k3d completions
-source <(k3d completion zsh)
+# source <(k3d completion zsh)
 
 # brew completions
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+# FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 # git completions
 zstyle ':completion:*:*:git:*' script ~/.zsh/zsh-git-completion/git-completion.bash
