@@ -27,7 +27,7 @@ alias pg='ps -ax | grep'
 # FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 # git completions
-zstyle ':completion:*:*:git:*' script ~/.zsh/zsh-git-completion/git-completion.bash
+zstyle ':completion:*:*:git:*' script ~/.zsh/zsh-git-completion/git-completion.zsh
 fpath=(~/.zsh/zsh-git-completion/ $fpath)
 
 # reload completions
