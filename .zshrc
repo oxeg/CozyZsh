@@ -4,7 +4,7 @@ autoload -Uz compinit && compinit
 
 # expand PATH
 export PATH=/usr/local/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
+# export PATH=/opt/homebrew/bin:$PATH
 
 
 # env variables
