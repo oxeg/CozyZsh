@@ -14,7 +14,7 @@ Cozy zsh setup with minimum set of features for comfortable work.
 ### Installation
 
 ```
-git clone git@github.com:esin88/CozyZsh.git
+git clone git@github.com:oxeg/CozyZsh.git
 cd CozyZsh
 chmod +x install.sh
 ./install.sh
