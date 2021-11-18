@@ -1,8 +1,9 @@
 #!/bin/bash
 
-mkdir ~/.zsh
+mkdir -p ~/.zsh
 
 echo "Installing git-completion"
+mkdir -p ~/.zsh/zsh-git-completion
 curl -o ~/.zsh/zsh-git-completion/git-completion.zsh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 
 echo "Installing zsh-autosuggestions"
