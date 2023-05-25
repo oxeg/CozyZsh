@@ -1,3 +1,6 @@
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # reload completions
 autoload -Uz compinit && compinit
 
@@ -13,18 +16,13 @@ export PATH=/usr/local/bin:$PATH
 
 # aliases
 alias ll='ls -las'
-alias cdc='cd ~/git'
-alias pg='ps -ax | grep'
 
 
 # kubectl completions
 # source <(kubectl completion zsh)
 
-# k3d completions
-# source <(k3d completion zsh)
-
 # brew completions
-# FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 # git completions
 zstyle ':completion:*:*:git:*' script ~/.zsh/zsh-git-completion/git-completion.zsh
@@ -55,4 +53,5 @@ setopt PROMPT_SUBST
 # set PROMPT
 # default PROMPT='%n@%m %1~ %#'
 # see http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
+# for additional symbols use MesloLGS Nerd Font Mono from https://www.nerdfonts.com/
 PROMPT='%(?.%B%F{green}√.%B%F{red}✖)%b%f %B%F{250}%1~%f%b ${vcs_info_msg_0_}%B❯%b '
